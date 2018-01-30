@@ -56,6 +56,9 @@ class ViewController: UIViewController {
             return
         }
 
+
+        
+        
         
         var attachment: UNNotificationAttachment
         attachment = try! UNNotificationAttachment(identifier: "MyNotification", url: imgUrl, options: .none)
@@ -66,7 +69,7 @@ class ViewController: UIViewController {
         notify.body = "The new notification is iOS version 10 only available"
         notify.attachments = [attachment]
         
-        
+        notify.categoryIdentifier = "myNotificationCategory"
         
         let notifyTrigger = UNTimeIntervalNotificationTrigger(timeInterval: inSecond, repeats: false)
         let request = UNNotificationRequest(identifier: "MyNotification", content: notify, trigger: notifyTrigger)

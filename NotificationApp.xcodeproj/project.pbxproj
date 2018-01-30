@@ -13,7 +13,36 @@
 		754016D32020DAE10048EAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754016D22020DAE10048EAE6 /* Assets.xcassets */; };
 		754016D62020DAE10048EAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754016D42020DAE10048EAE6 /* LaunchScreen.storyboard */; };
 		754016DE2020E9770048EAE6 /* Ashish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 754016DD2020E9770048EAE6 /* Ashish.jpg */; };
+		754016E62020EC7C0048EAE6 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754016E52020EC7C0048EAE6 /* UserNotifications.framework */; };
+		754016E82020EC7C0048EAE6 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754016E72020EC7C0048EAE6 /* UserNotificationsUI.framework */; };
+		754016EB2020EC7C0048EAE6 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754016EA2020EC7C0048EAE6 /* NotificationViewController.swift */; };
+		754016EE2020EC7C0048EAE6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754016EC2020EC7C0048EAE6 /* MainInterface.storyboard */; };
+		754016F22020EC7C0048EAE6 /* CustomNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 754016E32020EC7C0048EAE6 /* CustomNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		754016F02020EC7C0048EAE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754016C02020DAE10048EAE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754016E22020EC7C0048EAE6;
+			remoteInfo = CustomNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		754016F62020EC7C0048EAE6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				754016F22020EC7C0048EAE6 /* CustomNotification.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		754016C82020DAE10048EAE6 /* NotificationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +53,12 @@
 		754016D52020DAE10048EAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		754016D72020DAE10048EAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		754016DD2020E9770048EAE6 /* Ashish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ashish.jpg; sourceTree = "<group>"; };
+		754016E32020EC7C0048EAE6 /* CustomNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		754016E52020EC7C0048EAE6 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		754016E72020EC7C0048EAE6 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		754016EA2020EC7C0048EAE6 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		754016ED2020EC7C0048EAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		754016EF2020EC7C0048EAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +69,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		754016E02020EC7C0048EAE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754016E82020EC7C0048EAE6 /* UserNotificationsUI.framework in Frameworks */,
+				754016E62020EC7C0048EAE6 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				754016CA2020DAE10048EAE6 /* NotificationApp */,
+				754016E92020EC7C0048EAE6 /* CustomNotification */,
+				754016E42020EC7C0048EAE6 /* Frameworks */,
 				754016C92020DAE10048EAE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				754016C82020DAE10048EAE6 /* NotificationApp.app */,
+				754016E32020EC7C0048EAE6 /* CustomNotification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +114,25 @@
 			path = NotificationApp;
 			sourceTree = "<group>";
 		};
+		754016E42020EC7C0048EAE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				754016E52020EC7C0048EAE6 /* UserNotifications.framework */,
+				754016E72020EC7C0048EAE6 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		754016E92020EC7C0048EAE6 /* CustomNotification */ = {
+			isa = PBXGroup;
+			children = (
+				754016EA2020EC7C0048EAE6 /* NotificationViewController.swift */,
+				754016EC2020EC7C0048EAE6 /* MainInterface.storyboard */,
+				754016EF2020EC7C0048EAE6 /* Info.plist */,
+			);
+			path = CustomNotification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +143,34 @@
 				754016C42020DAE10048EAE6 /* Sources */,
 				754016C52020DAE10048EAE6 /* Frameworks */,
 				754016C62020DAE10048EAE6 /* Resources */,
+				754016F62020EC7C0048EAE6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				754016F12020EC7C0048EAE6 /* PBXTargetDependency */,
 			);
 			name = NotificationApp;
 			productName = NotificationApp;
 			productReference = 754016C82020DAE10048EAE6 /* NotificationApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		754016E22020EC7C0048EAE6 /* CustomNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754016F32020EC7C0048EAE6 /* Build configuration list for PBXNativeTarget "CustomNotification" */;
+			buildPhases = (
+				754016DF2020EC7C0048EAE6 /* Sources */,
+				754016E02020EC7C0048EAE6 /* Frameworks */,
+				754016E12020EC7C0048EAE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomNotification;
+			productName = CustomNotification;
+			productReference = 754016E32020EC7C0048EAE6 /* CustomNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +183,10 @@
 				ORGANIZATIONNAME = "Ashish Kumar Mourya";
 				TargetAttributes = {
 					754016C72020DAE10048EAE6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					754016E22020EC7C0048EAE6 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -117,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				754016C72020DAE10048EAE6 /* NotificationApp */,
+				754016E22020EC7C0048EAE6 /* CustomNotification */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +223,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		754016E12020EC7C0048EAE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754016EE2020EC7C0048EAE6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,7 +243,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		754016DF2020EC7C0048EAE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754016EB2020EC7C0048EAE6 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		754016F12020EC7C0048EAE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754016E22020EC7C0048EAE6 /* CustomNotification */;
+			targetProxy = 754016F02020EC7C0048EAE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		754016CF2020DAE10048EAE6 /* Main.storyboard */ = {
@@ -162,6 +276,14 @@
 				754016D52020DAE10048EAE6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		754016EC2020EC7C0048EAE6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				754016ED2020EC7C0048EAE6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -277,6 +399,7 @@
 		754016DB2020DAE10048EAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99QMU97Y3T;
@@ -292,6 +415,7 @@
 		754016DC2020DAE10048EAE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99QMU97Y3T;
@@ -299,6 +423,36 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = new.NotificationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		754016F42020EC7C0048EAE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99QMU97Y3T;
+				INFOPLIST_FILE = CustomNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = new.NotificationApp.CustomNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		754016F52020EC7C0048EAE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99QMU97Y3T;
+				INFOPLIST_FILE = CustomNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = new.NotificationApp.CustomNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,6 +475,15 @@
 			buildConfigurations = (
 				754016DB2020DAE10048EAE6 /* Debug */,
 				754016DC2020DAE10048EAE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754016F32020EC7C0048EAE6 /* Build configuration list for PBXNativeTarget "CustomNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754016F42020EC7C0048EAE6 /* Debug */,
+				754016F52020EC7C0048EAE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
